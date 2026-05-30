@@ -1,0 +1,7 @@
+alias ll='ls -ltr'
+
+alias stop-gp="launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*"
+alias start-gp="launchctl load /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*"
+
+alias stop-globalprotect="launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*"
+alias start-globalprotect="launchctl load /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*"

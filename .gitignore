@@ -1,0 +1,14 @@
+# Shell history — never commit these
+.zsh_history
+.bash_history
+
+# macOS noise
+.DS_Store
+
+# Backup files created by make install
+*.bak
+
+# Secrets / credentials
+.env
+*.pem
+*.key
