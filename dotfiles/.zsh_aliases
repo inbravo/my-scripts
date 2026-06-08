@@ -1,7 +1,33 @@
+# ---------------------------------------------------------------
+# Navigation & file listing
+# ---------------------------------------------------------------
 alias ll='ls -ltr'
+alias la='ls -lAh'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
-alias stop-gp="launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*"
-alias start-gp="launchctl load /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*"
+# ---------------------------------------------------------------
+# Homebrew
+# ---------------------------------------------------------------
+alias bup='brew update && brew upgrade && brew cleanup'
+alias bls='brew list'
+alias bsr='brew search'
+alias binfo='brew info'
 
-alias stop-globalprotect="launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*"
-alias start-globalprotect="launchctl load /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*"
+# ---------------------------------------------------------------
+# System
+# ---------------------------------------------------------------
+alias cls='clear'
+alias path='echo $PATH | tr ":" "\n"'
+alias reload='source ~/.zprofile && source ~/.zshrc && echo "Shell reloaded."'
+alias myip='curl -s ifconfig.me'
+alias ports='lsof -i -P | grep LISTEN'
+alias df='df -h'
+alias du='du -sh'
+
+# ---------------------------------------------------------------
+# VPN - GlobalProtect
+# ---------------------------------------------------------------
+alias vpn-start="launchctl load /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*"
+alias vpn-stop="launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*"
